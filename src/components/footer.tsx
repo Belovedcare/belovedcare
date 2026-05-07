@@ -10,7 +10,7 @@ const Footer = () => {
       </span>
       <span>
         Lic # 306006741 ·
-        <a href="mailto:belovedcare.co@gmail.com">belovedcare.co@gmail.comm</a>
+        <a href="mailto:belovedcare.co@gmail.com">belovedcare.co@gmail.com</a>
       </span>
     </footer>
   );
