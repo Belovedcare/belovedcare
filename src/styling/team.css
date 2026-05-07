@@ -1,0 +1,110 @@
+.team {
+  background: #d4e9e9;
+  height: 90vh;
+  scroll-margin-top: 76px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.team-content {
+  width: 50%;
+  margin: auto 0;
+  padding: 0 100px;
+  text-align: left;
+  height: 60%;
+}
+.team-grid {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.team-info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.portrait-img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  clip-path: circle(40%);
+  object-position: center top;
+}
+
+.team-card {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  padding: 1.8rem;
+  background: #ffffff;
+  border-radius: 2px;
+  border-bottom: 2px solid #c9a96e;
+  height: 150px;
+  width: 310px;
+}
+.team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #d4e9e9;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2f6b6b;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.team-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  color: #2f6b6b;
+}
+.team-role {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 0.3rem;
+}
+.team-phone {
+  font-size: 0.85rem;
+  color: #426c6c;
+  margin-top: 0.2rem;
+}
+
+section {
+  padding: 6rem 6rem;
+}
+.support-label {
+  font-size: 25px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 0.8rem;
+}
+.support-h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.8em;
+  font-weight: 400;
+  color: #7096a3;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
+.support-body {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.85;
+  color: #4a4a4a;
+  max-width: 560px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+}

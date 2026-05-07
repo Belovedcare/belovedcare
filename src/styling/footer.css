@@ -1,0 +1,14 @@
+footer {
+  background: #4a6873;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+}
+footer a {
+  color: var(--gold);
+  text-decoration: none;
+}

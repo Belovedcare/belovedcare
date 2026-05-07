@@ -1,0 +1,108 @@
+.contact {
+  background: #7096a3;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 82vh;
+  margin: 0;
+  padding: 0;
+}
+.contact .section-h2 {
+  color: #fff;
+}
+.contact .section-label {
+  color: #c9a96e;
+}
+.contact-grid {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  align-items: center;
+}
+.contact-intro {
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 22px;
+  font-family: "Cormorant Garamond", serif;
+  width: 100%;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a96e;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+}
+.contact-info-label {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #d4e9e9;
+  margin-bottom: 0.2rem;
+}
+.contact-info-val {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.contact-cta {
+  margin-top: 2.5rem;
+  display: inline-block;
+  background: #c9a96e;
+  color: #2b2b2b;
+  padding: 1rem 2.4rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.contact-cta:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.contact-left {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 80%;
+  width: 40%;
+}
+
+.connect-label {
+  font-size: 25px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 0.8rem;
+}
+.connect-h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3em;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
