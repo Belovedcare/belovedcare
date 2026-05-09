@@ -104,7 +104,6 @@ img {
 @media (min-width: 1280px) {
   .hero {
     height: 90vh;
-    border: 1px solid red;
   }
 
   .container-small {
@@ -116,7 +115,6 @@ img {
 @media (min-width: 1024px) {
   .hero {
     height: 80dvh;
-    border: 1px solid pink;
   }
 
   .container-small {
