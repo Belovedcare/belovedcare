@@ -108,3 +108,13 @@ section {
   font-family: "Cormorant Garamond", serif;
   font-size: 22px;
 }
+
+/* Breakpoint at 768px and above */
+@media (min-width: 768px) {
+  .team-info {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+  }
+}
