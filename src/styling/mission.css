@@ -96,3 +96,10 @@
     height: 90dvh;
   }
 }
+
+/* Small phones */
+@media (max-width: 480px) {
+  #mission {
+    display: none;
+  }
+}

@@ -21,9 +21,9 @@ const Support = () => {
           <img src={bed1} />
           <img src={bed2} />
         </div>
-        <div className="beds2">
+        {/* <div className="beds2">
           <img src={bed3} />
-        </div>
+        </div> */}
       </div>
       <div className="services-list">
         <div className="service-item">
