@@ -10,10 +10,10 @@ const Team = () => {
         <p className="support-label">Who We Are</p>
         <h2 className="support-h2">
           A Mother &amp; Daughter Team
-          <br />
+          <br className="br" />
           Built on Love
         </h2>
-        <p className="support-body">
+        <p className="support-body-override">
           We founded Beloved Care with one simple vision — to create the kind of
           home we would want for our own loved ones. A place filled with warmth,
           patience, dignity, and genuine compassion.
