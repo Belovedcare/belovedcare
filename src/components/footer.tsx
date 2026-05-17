@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer>
       <span>
-        © 2025 Beloved Care · Residential Care Facility for the Elderly ·
-        Anaheim, CA
+        © 2025 Beloved Care · <br className="br" /> Residential Care Facility
+        for the Elderly · Anaheim, CA
       </span>
       <span>
         Lic # 306006741 ·

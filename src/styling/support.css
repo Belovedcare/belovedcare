@@ -189,7 +189,7 @@
 /* Laptops */
 @media (min-width: 1024px) {
   .services {
-    height: 90dvh;
+    min-height: 90dvh;
     border: none;
   }
 }

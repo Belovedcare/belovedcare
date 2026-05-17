@@ -8,7 +8,26 @@ footer {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
 }
-footer a {
+/* footer a {
   color: var(--gold);
   text-decoration: none;
+} */
+
+@media (min-width: 700px) {
+  .br {
+    display: none;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  footer {
+    flex-flow: column nowrap;
+    padding: 1rem 3rem;
+  }
+
+  footer span {
+    padding: 0 0 10px 0;
+    text-align: center;
+  }
 }
