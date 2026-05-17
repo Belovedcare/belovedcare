@@ -4,7 +4,7 @@ import "../styling/mission.css";
 const Mission = () => {
   return (
     <section id="mission">
-      <div className="mission-grid-left">Images will go here</div>
+      <div className="mission-grid-left"></div>
       <div className="mission-grid-right">
         <div className="mission-img"></div>
         <div>

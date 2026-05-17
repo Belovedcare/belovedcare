@@ -27,12 +27,12 @@ const Hero = () => {
       </div>
       <div className="hero-right">
         <div className="img-container">
-          <div>
+          <div className="img-item">
             <img src={house} alt="Residential Care" />
           </div>
           <p className="hero-h2">Residential Care Facility for the Elderly</p>
 
-          <div className="img-2">
+          <div className="img-2 img-item">
             <img src={welcome} alt="Welcome" />
           </div>
         </div>
