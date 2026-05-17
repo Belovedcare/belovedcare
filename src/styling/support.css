@@ -2,7 +2,7 @@
   background: #7096a3;
   scroll-margin-top: 76px;
   width: 100%;
-  height: 90dvh;
+  min-height: 90dvh;
   padding: 0;
   margin: 0;
   display: flex;
@@ -200,7 +200,7 @@
     background: #7096a3;
     scroll-margin-top: 76px;
     width: 100%;
-    height: 130dvh;
+    min-height: 130dvh;
     padding: 0;
     margin: 0;
     display: flex;

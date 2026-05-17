@@ -166,6 +166,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    padding-top: 15px;
   }
   .team-content {
     width: 100%;

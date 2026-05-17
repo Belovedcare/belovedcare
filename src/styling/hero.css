@@ -153,7 +153,8 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0;
-    height: 88vh;
+    min-height: 88vh;
+    padding-bottom: 5px;
   }
 
   .hero-left {
