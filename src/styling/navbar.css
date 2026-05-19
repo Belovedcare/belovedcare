@@ -11,6 +11,14 @@
   z-index: 1000;
 }
 
+.navbar-main {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-logo {
   display: flex;
   flex-flow: row nowrap;
@@ -22,22 +30,6 @@
   border: 1px solid #7ca3b0;
   width: 100%;
 }
-
-/* .nav-logo-text {
-  white-space: nowrap;
-  text-align: center;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: white;
-  letter-spacing: 0.02em;
-} */
-
-/* .nav-logo svg {
-  width: 36px;
-  height: 36px;
-  display: block;
-} */
 
 .navbar-links {
   display: flex;
@@ -61,11 +53,10 @@
 }
 
 .navbar-links li {
-  /* border: 1px solid red; */
   padding: 0 40px;
 }
 
-a {
+.navbar-links li a {
   color: inherit !important;
   text-decoration: none;
 }
@@ -85,4 +76,70 @@ a {
 
 .contactus:hover {
   cursor: pointer;
+}
+
+.navbar-links-mobile {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar-links-mobile li {
+  border-bottom: 1px solid white;
+}
+
+.navbar-links-mobile li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.navbar-mobile {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-contaier-links {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  /* justify-content: center; */
+}
+
+/* Reset Ant Design Menu items back to normal */
+.ant-menu-item a {
+  color: unset !important;
+  text-decoration: unset !important;
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .contactus {
+    display: none;
+  }
+
+  .navbar-main {
+    display: none;
+  }
+
+  .navbar-container {
+    position: static;
+  }
+}
+
+/* Small phones */
+@media (min-width: 481px) {
+  .mobile-contaier-links {
+    display: none;
+  }
 }
