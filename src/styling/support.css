@@ -235,8 +235,9 @@
 
   .beds-img1 {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -244,7 +245,7 @@
     object-fit: cover;
     border-radius: 10px;
     height: 150px;
-    width: 200px;
+    width: 300px;
   }
 
   .section-override {
