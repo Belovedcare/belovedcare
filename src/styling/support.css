@@ -254,7 +254,8 @@
     color: #f6f6f6;
     line-height: 1.2;
     margin-bottom: 1.4rem;
-    padding: 0 0 0 40px;
+    /* padding: 0 0 0 40px; */
+    max-width: 91%;
   }
 
   .section-body-override {
