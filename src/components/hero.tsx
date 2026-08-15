@@ -1,6 +1,6 @@
 import React from "react";
 import "../styling/hero.css";
-import house from "../assets/house.jpg";
+// import house from "../assets/house.jpg";
 import welcome from "../assets/welcome.jpg";
 
 const Hero = () => {
@@ -26,15 +26,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-right">
-        <div className="img-container">
-          <div className="img-item">
-            <img src={house} alt="Residential Care" />
-          </div>
-          <p className="hero-h2">Residential Care Facility for the Elderly</p>
-
-          <div className="img-2 img-item">
-            <img src={welcome} alt="Welcome" />
-          </div>
+        <p className="hero-h2">Residential Care Facility for the Elderly <br /> <br /></p>
+        <div className="img-2">
+          <img src={welcome} alt="Welcome" />
         </div>
       </div>
 
@@ -52,9 +46,9 @@ const Hero = () => {
         </p>
 
         <div className="img-container">
-          <div className="img-2">
+          {/* <div className="img-2">
             <img src={house} alt="Residential Care" />
-          </div>
+          </div> */}
 
           <div className="img-2">
             <img src={welcome} alt="Welcome" />
