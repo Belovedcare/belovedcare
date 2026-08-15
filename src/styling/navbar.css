@@ -15,7 +15,7 @@
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -29,6 +29,11 @@
 .logo {
   border: 1px solid #7ca3b0;
   width: 100%;
+}
+a{
+  color: white;
+  text-decoration: none;
+
 }
 
 .navbar-links {
@@ -62,16 +67,14 @@
 }
 
 .contactus {
-  margin: auto 0;
+  /* margin: auto 0; */
   font-family: "Cormorant Garamond", serif;
   font-size: 1.2em;
   font-weight: 600;
-  color: #ffffff;
   border: 1px solid #e5e6e6;
   padding: 5px 12px;
-  /* background-color: #e5e6e6; */
   border-radius: 8px;
-  color: white;
+  color: inherit; 
 }
 
 .contactus:hover {
