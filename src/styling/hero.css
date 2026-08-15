@@ -3,7 +3,7 @@
   flex-flow: row nowrap;
   background-color: #d4e9e9;
   padding: 10px;
-  scroll-margin-top: 75px;
+  scroll-margin-top: 100px;
 }
 
 .hero-left {
@@ -129,7 +129,7 @@ img {
 /* Tablets */
 @media (min-width: 481px) {
   .hero {
-    height: 85dvh;
+    height: 90dvh;
   }
 
   .hero-h1 {

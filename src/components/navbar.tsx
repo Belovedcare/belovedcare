@@ -18,11 +18,11 @@ const Navbar = () => {
   return (
     <section className="navbar-container">
       <div className="navbar-main">
-        <div className="nav-logo">
+        {/* <div className="nav-logo"> */}
           <a href="#hero">
             <img className="logo" src={Logo} />
           </a>
-        </div>
+        {/* </div> */}
         <ul className="navbar-links">
           <li>
             <a href="#mission">OUR MISSION</a>

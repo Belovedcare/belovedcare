@@ -3,7 +3,7 @@
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 0;
+  padding: 4px 0;
   background-color: #7096a3;
   border-bottom: 1px solid rgb(228, 222, 222);
   position: sticky;
@@ -30,7 +30,7 @@
   /* border: 0.5px solid #dff5fa; */
   /* width: 100%; */
   filter: brightness(0) invert(1);
-  width: 110px;
+  width: 130px;
 }
 a{
   color: white;
@@ -43,6 +43,7 @@ a{
   gap: 2.5rem;
   list-style: none;
   color: white;
+  padding: 5px 0 0 0;
 }
 
 .navbar-links a {
