@@ -1,9 +1,13 @@
 .hero {
   display: flex;
   flex-flow: row nowrap;
-  background-color: #d4e9e9;
+  background-color: #e5eeee;
   padding: 10px;
   scroll-margin-top: 100px;
+  /* background-image: url('../assets//belovedLogo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px; */
 }
 
 .hero-left {
