@@ -1,26 +1,60 @@
 .team {
   background: #d4e9e9;
-  min-height: 90vh;
-  scroll-margin-top: 74px;
-  margin: 0;
-  padding: 0;
+  min-height: calc(100dvh - var(--nav-height));
+  scroll-margin-top: var(--nav-height);
+  padding: clamp(20px, 4vw, 40px) clamp(24px, 6vw, 100px);
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
   align-items: center;
 }
 
-.team-content {
-  width: 45%;
-  margin: auto 0;
-  text-align: left;
+.team-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
 }
+
+.team-content {
+  flex: 1 1 480px;
+  text-align: left;
+  margin: 0;
+}
+
+.support-label {
+  font-size: 1.1rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 0.6rem;
+}
+
+.support-h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 3vw, 2.5em);
+  font-weight: 400;
+  color: #7096a3;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
+
+.support-body-override {
+  font-family: "Spectral", serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #4a4a4a;
+  max-width: 480px;
+}
+
 .team-grid {
+  flex: 1 1 420px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
-  width: 40%;
+  gap: 1.4rem;
 }
 
 .team-info {
@@ -29,6 +63,7 @@
   align-items: center;
   width: 100%;
   justify-content: center;
+  gap: 0;
 }
 
 .portrait-img {
@@ -37,22 +72,25 @@
   object-fit: cover;
   clip-path: circle(40%);
   object-position: center top;
+  flex-shrink: 0;
 }
 
 .team-card {
   display: flex;
-  gap: 1.4rem;
+  gap: 1.2rem;
   align-items: center;
-  padding: 1.8rem;
+  padding: 1.6rem;
   background: #ffffff;
   border-radius: 2px;
   border-bottom: 2px solid #c9a96e;
-  height: 110px;
-  width: 310px;
+  min-height: 110px;
+  width: 100%;
+  max-width: 310px;
 }
+
 .team-avatar {
-  width: 72px;
-  height: 72px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: #d4e9e9;
   flex-shrink: 0;
@@ -61,197 +99,80 @@
   justify-content: center;
   color: #2f6b6b;
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
-.team-name {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.2rem;
-  color: #2f6b6b;
-}
+
 .team-role {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #c9a96e;
   margin-bottom: 0.3rem;
 }
+
+.team-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  color: #2f6b6b;
+}
+
 .team-phone {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: #426c6c;
   margin-top: 0.2rem;
 }
 
-.support-label {
-  font-size: 1.5em;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #c9a96e;
-  margin-bottom: 0.8rem;
-}
-.support-h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2.5em;
-  font-weight: 400;
-  color: #7096a3;
-  line-height: 1.2;
-  margin-bottom: 1.4rem;
-}
-.support-body-override {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.85;
-  color: #4a4a4a;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.3em;
-}
-
-/* Breakpoint at 768px and above */
-@media (min-width: 768px) {
-  .team-info {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-/* Tablets */
+/* Tablets and below: stack, center */
 @media (max-width: 1023px) {
   .team {
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .team-content {
-    width: 70%;
-    padding: 0;
-    margin: 0;
+    min-height: auto;
+    padding: clamp(40px, 6vw, 70px) clamp(24px, 6vw, 60px);
   }
 
-  .support-label {
-    font-size: 25px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: #c9a96e;
-    margin-bottom: 0.8rem;
+  .team-inner {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem; /* tighter vertical gap when stacked */
   }
-  .support-h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 2.2em;
-    font-weight: 400;
-    color: #7096a3;
-    line-height: 1.2;
-    margin-bottom: 1.4rem;
-  }
-  .support-body-override {
-    font-size: 1rem;
-    max-width: none;
+
+  .team-content {
     width: 100%;
-    font-size: 20px;
-    padding: 0;
+    max-width: 640px;
+    text-align: center;
+  }
+
+  .support-body-override {
+    margin: 0 auto;
   }
 
   .team-grid {
-    width: 70%;
-  }
-}
-
-/* For cards */
-@media (max-width: 778px) {
-  .team-card {
-    display: flex;
-    gap: 1.4rem;
-    align-items: center;
-    padding: 1.8rem;
-    background: #ffffff;
-    border-radius: 2px;
-    border-bottom: 2px solid #c9a96e;
-    height: 110px;
-    width: 250px;
+    width: 100%;
   }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
-  .team {
-    display: flex;
+  .team-info {
     flex-flow: column nowrap;
-    justify-content: center;
-    padding-top: 15px;
-  }
-  .team-content {
-    width: 100%;
-    padding: 0 25px;
-    margin: 0;
-  }
-
-  .support-label {
-    /* font-size: 20px; */
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: #c9a96e;
-    margin-bottom: 0.8rem;
-    width: 100%;
-  }
-  .support-h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 2.2em;
-    font-weight: 400;
-    color: #7096a3;
-    line-height: 1.2;
-    margin-bottom: 1.4rem;
-  }
-  .support-body-override {
-    font-size: 1rem;
-    max-width: none;
-    line-height: 1.5;
-    width: 100%;
-    font-size: 20px;
-    padding: 0;
-  }
-
-  .br-team {
-    display: none;
-  }
-
-  .team-grid {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
+    gap: 0.8rem;
   }
 
   .portrait-img {
-    height: 140px;
-    width: 140px;
-    object-fit: cover;
-    clip-path: circle(40%);
-    object-position: center top;
+    height: 130px;
+    width: 130px;
   }
 
   .team-card {
-    display: flex;
-    gap: 1.4rem;
-    align-items: center;
-    padding: 1rem;
-    background: #ffffff;
-    border-radius: 2px;
-    border-bottom: 2px solid #c9a96e;
-    height: 80px;
-    width: 230px;
+    max-width: 260px;
+    justify-content: center;
   }
 
-  .team-avatar {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
+  .support-h2 {
+    font-size: 1.9rem;
   }
 
-  .team-name {
+  .support-body-override {
     font-size: 1rem;
   }
 }
