@@ -1,77 +1,78 @@
 #mission {
-  /* background-color: #ebf5f7; */
   background-color: #d4e9e9;
   width: 100%;
-  height: 100vh;
+  min-height: calc(100dvh - var(--nav-height));
+  scroll-margin-top: var(--nav-height);
+  padding: clamp(20px, 4vw, 40px) clamp(24px, 6vw, 100px);
+  display: flex;
+  align-items: center;
+}
+
+.mission-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  scroll-margin-top: 74px;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
 }
 
 .mission-grid-left {
-  width: 50%;
-  margin: 0;
-  height: 100%;
-  /* border: 1px solid green; */
+  flex: 1 1 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-photo-collage {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  min-height: 480px;
+}
+
+.photo-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 18px 36px -14px rgba(83, 110, 119, 0.3);
+  transform: rotate(-2.5deg);
+  display: block;
+}
+
+
+.photo-accent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 18px 36px -14px rgba(83, 110, 119, 0.3);
+  transform: rotate(2deg);
 }
 
 .mission-grid-right {
-  width: 50%;
-  height: 100%;
+  flex: 1 1 480px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
-}
-.mission-img {
-  position: relative;
-  border-radius: 2px;
-  overflow: hidden;
-}
-.mission-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.mission-img-accent {
-  position: absolute;
-  bottom: -1.5rem;
-  right: -1.5rem;
-  width: 60%;
-  height: 60%;
-  border: 2px solid #c9a96e;
-  border-radius: 2px;
-  z-index: -1;
-}
-.vision-card {
-  /* margin-top: 2rem; */
-  padding: 10px;
-  border-left: 3px solid #7096a3;
-  background: #ffffff;
-  margin-bottom: 1rem;
-  width: 80%;
-}
-.vision-label {
-  font-size: 10px;
-}
-
-.vision-card p {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 18px;
-  font-style: italic;
-  color: #4a4a4a;
-  line-height: 1.5;
 }
 
 .mission-label {
-  font-size: 25px;
+  font-size: 1.1rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: #c9a96e;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
+
 .mission-h2 {
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(2rem, 3vw, 2.9rem);
@@ -80,27 +81,91 @@
   line-height: 1.2;
   margin-bottom: 1.4rem;
 }
+
 .mission-body {
-  font-size: 1rem;
   font-weight: 300;
   line-height: 1.85;
   color: #4a4a4a;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  width: 95%;
+  font-family: "Spectral", serif;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 520px;
 }
 
-/* Laptops */
-@media (min-width: 1024px) {
+.vision-card {
+  padding: 1.2rem 1.4rem;
+  border-left: 3px solid #7096a3;
+  background: #ffffff;
+  max-width: 520px;
+}
+
+.vision-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #7096a3;
+  margin-bottom: 0.4rem;
+}
+
+.vision-card p:last-child {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+/* Tablets and below: stack, center */
+@media (max-width: 1024px) {
   #mission {
-    height: 90dvh;
+    min-height: auto;
+    padding: clamp(40px, 6vw, 70px) clamp(24px, 6vw, 60px);
+  }
+
+  .mission-inner {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .mission-grid-right {
+    order: 1;
+  }
+
+  .mission-grid-left {
+    order: 2;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 2rem;
+  }
+
+  .mission-grid-right {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mission-body,
+  .vision-card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
-  #mission {
-    display: none;
+  .mission-h2 {
+    font-size: 1.9rem;
+  }
+
+  .mission-body {
+    font-size: 1rem;
+  }
+
+  .photo-main {
+    width: 80%;
+  }
+
+  .photo-accent {
+    width: 60%;
   }
 }
