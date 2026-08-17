@@ -1,6 +1,6 @@
 .contact {
   background: #7096a3;
-  min-height: calc(100dvh - var(--nav-height));
+  min-height: calc(90dvh - var(--nav-height));
   scroll-margin-top: var(--nav-height);
   padding: clamp(20px, 4vw, 40px) clamp(24px, 6vw, 100px);
   display: flex;
